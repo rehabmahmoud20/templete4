@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>templete 4</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header-bar green-background">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="text-uppercase text-light mb-0">
+              <i class="fa-solid fa-phone"></i> &nbsp;<span class="text-white-50">000 123 456 789</span>
+              &nbsp; <i class="fa-solid fa-envelope"></i>&nbsp; name@email.com
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex align-items-center content mx-md-0 mx-auto"
+          >
+            <p class="text-white-50 text-light mb-0 me-5">lets work together</p>
+            <button class="btn text-white-50 text-white-50 my-2" id="qbtn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getQuote()">get quote</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title main-text-color" id="exampleModalLabel">Quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <quote id="quo"></quote>
+        <p id="author"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg py-0 bg-white ">
+      <div class="container">
+        <a class="fs-2 navbar-brand" href="#">
+          <span class="fw-bold">Elite</span><span>Corp</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainnav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainnav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active py-1 pe-lg-4 text-uppercase"
+                aria-current="page"
+                href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1 pe-lg-4 text-uppercase" href="#" data-value="About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1 pe-lg-4 text-uppercase" href="#" data-value="Work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1 pe-lg-4 text-uppercase" href="#" data-value="Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1 text-uppercase" href="#" data-value="Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start header -->
+    <header class="header ">
+      <div class="overlay h-100 w-100">
+        <div id="carousela" class="carousel slide car h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators mb-4">
+              <button  type="button" data-bs-target="#carousela" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousela" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+              <button type="button" data-bs-target="#carousela" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <div class="container  text-center text-lg-start h-100 d-flex align-items-center">
+                    <h1 class="text-white lh-lg mx-auto mx-lg-0">We’re an Independent </br> Design and <span>Developement</span> </br> Agency.</h1>
+                  </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="container text-center text-lg-start h-100 d-flex align-items-center">
+                    <h1 class="text-white lh-lg mx-auto mx-lg-0">We’re an Independent </br> Design and <span>Developement</span> </br> Agency.</h1>
+                  </div>
+              </div>
+              <div class="carousel-item h-100">
+                <div class="container text-center text-lg-start h-100 d-flex align-items-center">
+                    <h1 class="text-white lh-lg mx-auto mx-lg-0">We’re an Independent </br> Design and <span>Developement</span> </br> Agency.</h1>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+    </header>
+<!-- end header -->
+    <section class="about py-5" id="About">
+        <div class="container">
+            <div class="row text-center py-5 gy-4 gy-lg-0">
+                <div class="col-md-6 col-lg-3">
+                  <div class="about-content">
+                    <i class="fa-solid fa-pen fa-2x rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"></i>
+                    <h3>Great ideas</h3>
+                    <p class="lh-lg">Lorem ipsum dolor sit amet, sectetur adipisicing elit,  eiusmod tempor incididunalquis nostrud       </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="about-content">
+                      <i class="fa-solid fa-gears fa-2x rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"></i>
+                      <h3>Quick Settings</h3>
+                      <p class="lh-lg">Lorem ipsum dolor sit amet, sectetur adipisicing elit,  eiusmod tempor incididunalquis nostrud       </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="about-content">
+                      <i class="fa-solid fa-cloud-arrow-down fa-2x rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"></i>
+                      <h3>Cloud Service</h3>
+                      <p class="lh-lg">Lorem ipsum dolor sit amet, sectetur adipisicing elit,  eiusmod tempor incididunalquis nostrud       </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="about-content">
+                      <i class="fa-solid fa-flag fa-2x rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"></i>
+                      <h3>Cross Development</h3>
+                      <p class="lh-lg">Lorem ipsum dolor sit amet, sectetur adipisicing elit,  eiusmod tempor incididunalquis nostrud       </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="company text-center py-5">
+        <div class="container">
+            <h2 class="h1 text-uppercase mb-4 mt-5">company overview</h2>
+            <p class="lh-lg mx-auto responsive-p">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+        <span class="d-block text-muted font-monospace mb-4">Let's Start Today</span>
+        <a href="#" class="text-uppercase text-decoration-none py-2 px-4 mb-5"> view more</a>
+        </div>
+
+    </section>
+    <!-- start features-post -->
+    <section class="features text-center py-5" id="Work">
+        <h2 class="h1 mb-4 ">featured work</h2>
+        <p class="lh-lg mx-auto responsive-p mb-4 text-muted">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+    
+        <div class="container mb-4">
+          <ul class="nav nav-pills mb-3 row " id="pills-tab" role="tablist">
+            <li class="nav-item col-md-4  mb-3  mb-xl-0 col-xl-2" role="presentation">
+              <button class="nav-link active mx-auto d-block " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">all</button>
+            </li>
+            <li class="nav-item col-md-4  mb-3  mb-xl-0 col-xl-2" role="presentation">
+              <button class="nav-link mx-auto d-block " id="pills-website-tab" data-bs-toggle="pill" data-bs-target="#pills-website" type="button" role="tab" aria-controls="pills-website" aria-selected="false">website</button>
+            </li>
+            <li class="nav-item col-md-4  mb-3  mb-xl-0 col-xl-2" role="presentation">
+              <button class="nav-link mx-auto d-block  " id="pills-logo-tab" data-bs-toggle="pill" data-bs-target="#pills-logo" type="button" role="tab" aria-controls="pills-logo" aria-selected="false">logo and brands</button>
+            </li>
+            <li class="nav-item col-md-4  mb-3  mb-xl-0 col-xl-2" role="presentation">
+              <button class="nav-link mx-auto d-block " id="pills-graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-graphic" type="button" role="tab" aria-controls="pills-graphic" aria-selected="false">graphic design</button>
+            </li>
+            <li class="nav-item col-md-4  mb-3  mb-xl-0 col-xl-2" role="presentation">
+              <button class="nav-link mx-auto d-block " id="pills-marketing-tab" data-bs-toggle="pill" data-bs-target="#pills-marketing" type="button" role="tab" aria-controls="pills-marketing" aria-selected="false">online marketing</button>
+            </li>
+            <li class="nav-item col-md-4  mb-3  mb-xl-0 col-xl-2" role="presentation">
+              <button class="nav-link mx-auto d-block " id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video" aria-selected="false">video</button>
+            </li>
+          </ul>
+      </div>
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+               <div class="row g-0">
+        <div class="col-sm-6 col-md-3">
+            <div class="feat-image">
+                <img src="/images/img-4 (1).jpg" class="w-100" alt="">
+            </div>
+            <div class="feat-image">
+                <img src="./images/img-2 (5).jpg" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="feat-image">
+                <img src="./images/img-3 (5).jpg" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="feat-image">
+                <img src="./images/img-5.jpg" class="w-100" alt="">
+            </div>
+            <div class="feat-image">
+                <img src="./images/img-6.jpg" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="feat-image">
+                <img src="./images/img-7.jpg" class="w-100" alt="">
+            </div>
+            <div class="feat-image">
+                <img src="./images/img-2 (5).jpg" class="w-100" alt="">
+            </div>
+        </div>
+    </div> 
+            </div>
+            <div class="tab-pane fade" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab">
+               <div class="row g-0">
+        <div class="col-sm-6 col-md-4">
+            <div class="feat-image">
+                <img src="/images/img-4 (1).jpg" class="w-100" alt="">
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="feat-image">
+                <img src="./images/img-5.jpg" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="feat-image">
+                <img src="./images/img-7.jpg" class="w-100" alt="">
+            </div>
+        </div>
+    </div> 
+            </div>
+            <div class="tab-pane fade" id="pills-logo" role="tabpanel" aria-labelledby="pills-profile-tab">
+               <div class="row g-0">
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="feat-image">
+                <img src="./images/img-3 (5).jpg" class="w-100" alt="">
+            </div>
+        </div>
+      </div>
+        
+            </div>
+            <div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab">
+              <div class="col-sm-6 col-md-4">
+                <div class="feat-image">
+                    <img src="./images/img-7.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="pills-marketing" role="tabpanel" aria-labelledby="pills-marketing-tab">
+               <div class="row g-0">
+                <div class="col-sm-6 col-md-4">
+                  
+                  <div class="feat-image">
+                      <img src="./images/img-6.jpg" class="w-100" alt="">
+                  </div>
+              </div>
+    </div> 
+            </div>
+            <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+              <div class="row g-0">
+                <div class="col-sm-6 col-md-3">
+                  <div class="feat-image">
+                      <img src="./images/img-5.jpg" class="w-100" alt="">
+                  </div>
+
+              </div>
+              <div class="col-sm-6 col-md-3">
+                  <div class="feat-image">
+                      <img src="./images/img-7.jpg" class="w-100" alt="">
+                  </div>
+    </div> 
+    <div class="col-sm-6 col-md-3">
+      <div class="feat-image">
+          <img src="./images/img-5.jpg" class="w-100" alt="">
+      </div>
+
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="feat-image">
+        <img src="./images/img-4 (1).jpg" class="w-100" alt="">
+    </div>
+
+</div>
+            </div>
+
+          </div>
+        </div>
+    
+        
+    </section>
+    <!-- end features-post -->
+    <!-- start latest-post -->
+    <section class="latest-post py-5" id="Blog">
+      <div class="container mb-5">
+        <h2 class="h1 mb-4 text-center fw-bold">Latest Post</h2>
+        <p class="lh-lg mx-auto responsive-p mb-4 text-muted text-center">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+    <div class="row text-center text-lg-start gy-2 gy-lg-0">
+      <div class="col-md-6 col-lg-4 ">
+        <div class="card border-0">
+          <img src="./images/02.jpg" class="card-img-top" alt="...">
+          <div class="card-body ps-0">
+            <p class="card-text fw-bold mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab?</p>
+            <span class="text-muted mb-2 d-block">March 24 2017</span>
+            <p class="text-lead mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores at adipisci cumque molestiae magnam dolorem sit quam reprehenderit, repellendus optio voluptate, natus modi, corrupti molestias velit totam corrupti molestias velit totam accusamus corporis.</p>
+          <span class="fw-bold">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 ">
+        <div class="card border-0">
+          <img src="./images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body ps-0">
+            <p class="card-text fw-bold mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab?</p>
+            <span class="text-muted mb-2 d-block">March 24 2017</span>
+            <p class="text-lead mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores at adipisci cumque molestiae magnam dolorem sit quam reprehenderit, repellendus optio voluptate, natus modi, corrupti molestias velit totam corrupti molestias velit totam accusamus corporis.</p>
+          <span class="fw-bold">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mx-md-auto ">
+        <div class="card border-0">
+          <img src="./images/04.jpg" class="card-img-top" alt="...">
+          <div class="card-body ps-0">
+            <p class="card-text fw-bold mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab?</p>
+            <span class="text-muted mb-2 d-block">March 24 2017</span>
+            <p class="text-lead mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores at adipisci cumque molestiae magnam dolorem sit quam reprehenderit, repellendus optio voluptate, natus modi, corrupti molestias velit totam corrupti molestias velit totam accusamus corporis.</p>
+          <span class="fw-bold">Read More</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+    </section>
+    <!-- end latest-post -->
+    <!-- start testimonials -->
+    <section class="testim text-center text-light ">
+      <div id="carouselExampleIndicators" class="carousel slide" >
+        <div class="carousel-indicators car">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active item1 ">
+           
+            <div class="overlay w-100 h-100 py-5">
+              <div class="test-img  mx-auto mb-4">
+                <img src="./images/img-1 (5).jpg" class="d-block  w-100 h-100 rounded-circle img-thumbnail" alt="...">
+              </div>
+                <h5>Alexander Domas</h5>
+                <p class="">Company CEO</p>
+                <p class="responsive-p mx-auto lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iure quasi quo officia? Id eaque aspernatur consequuntur incidunt fuga corrupti.</p>
+             
+              </div>
+            </div>
+          
+          <div class="carousel-item item2">
+            <div class="overlay w-100 h-100 py-5">
+              <div class="test-img  mx-auto mb-4">
+                <img src="./images/img-1 (5).jpg" class="d-block  w-100 h-100 rounded-circle img-thumbnail" alt="...">
+              </div>
+                <h5>Alexander Domas</h5>
+                <p class="">Company CEO</p>
+                <p class="responsive-p mx-auto lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iure quasi quo officia? Id eaque aspernatur consequuntur incidunt fuga corrupti.</p>
+             
+            </div>
+          </div>
+          <div class="carousel-item item3">
+            <div class="overlay w-100 h-100 py-5">
+              <div class="test-img  mx-auto mb-4">
+                <img src="./images/img-1 (5).jpg" class="d-block  w-100 h-100 rounded-circle img-thumbnail" alt="...">
+              </div>
+                <h5>Alexander Domas</h5>
+                <p class="">Company CEO</p>
+                <p class="responsive-p mx-auto lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iure quasi quo officia? Id eaque aspernatur consequuntur incidunt fuga corrupti.</p>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon   prev bg-black next p-4" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon  next p-4" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- end testimonials -->
+
+    <!-- start pricing table -->
+<section class="pricing py-5 text-center section-color mb-5">
+<div class="container">
+  <h2 class="h1 mb-4 text-center fw-bold">Pricing Table</h2>
+        <p class="lh-lg mx-auto responsive-p mb-4 text-muted text-center mb-5">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+<div class="row gy-4 gy-md-0">
+  <div class="col-md-4 mb-4 mb-md-0">
+    <div class="pricing-content py-5">
+      <h4>Small Business</h4>
+      <p class="text-muted mb-4">Lorem, ipsum.</p>
+      <p class="text-uppercase section-color py-3"><sup class="h2">$</sup><span class="h2">99/</span>year</p>
+      <ul class="list-unstyled">
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+
+      </ul>
+      <a href="#" class="text-uppercase text-decoration-none text-white px-4 py-2 main-color  "> buy now</a>
+
+    </div>
+  </div>
+  <div class="col-md-4 ">
+    <div class="pricing-content py-5 special-box">
+      <h4>Small Business</h4>
+      <p class="text-muted mb-4">Lorem, ipsum.</p>
+      <p class="text-uppercase main-color text-white py-3"><sup class="h2">$</sup><span class="h2">199/</span>year</p>
+      <ul class="list-unstyled">
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+
+      </ul>
+      <a href="#" class="text-uppercase text-decoration-none text-white px-4 py-2 green-background  "> buy now</a>
+
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="pricing-content py-5">
+      <h4>Small Business</h4>
+      <p class="text-muted mb-4">Lorem, ipsum.</p>
+      <p class="text-uppercase section-color py-3"><sup class="h2">$</sup><span class="h2">299/</span>year</p>
+      <ul class="list-unstyled">
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+        <li class="text-muted mb-4">Lorem ipsum</li>
+
+      </ul>
+      <a href="#" class="text-uppercase text-decoration-none text-white px-4 py-2 main-color  "> buy now</a>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+
+</section>
+
+    <!-- end pricing table -->
+    <!-- start  choose us-->
+<section class="choose-us py-5 text-md-start mb-5 ">
+  <div class="row g-0">
+    <div class="col-xxl-6 ">
+      <div class="choose-image">
+        <img src="./images/man.jpg" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <div class="col-xxl-6 green-background text-light p-4 lh-lg text-center text-xxl-start">
+     <h2 class="fw-bold h1 mb-4">Why Choose Us</h2>
+     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto animi earum hic culpa quos Est iusto animi earum hic culpa quos quidem ex rerum cumque non cupiditate praesentium, sit ab dignissimos omnis quae blanditiis deserunt doloribus! Facilis assumenda incidunt nulla nemo dolorem eligendi asperiores quae quas! Recusandae tempore obcaecati rem, dolorum ex perspiciatis eius dicta ducimus.</p>
+    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit assumenda mollitia perferendis tempora aut quos adipisci similique veritatis aperiam id! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="#" class="text-uppercase text-decoration-none text-white px-4 py-2 main-color"> view more</a>
+    
+  </div>
+  </div>
+
+</section>
+    <!-- end  choose us-->
+    <!-- start over all -->
+<section class="over-all py-5 mb-5">
+<div class="container">
+  <div class="row text-center gy-4 gy-lg-0">
+    <div class="col-md-6 col-lg-3">
+      <i class="fa-solid fa-person fa-4x green-color" ></i>
+      <span class="d-block green-color h2 fw-bold mb-0 ">424</span>
+      <span class="main-text-color text-uppercase fst-italic">happy clients</span>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <i class="fa-solid fa-arrow-up fa-4x green-color"></i>
+      <span class="d-block green-color h2 fw-bold mb-0">112</span>
+      <span class="main-text-color text-uppercase fst-italic">amazing tours</span>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <i class="fa-solid fa-table fa-4x green-color" ></i>
+      <span class="d-block green-color h2 fw-bold mb-0">595</span>
+      <span class="main-text-color text-uppercase fst-italic">partners</span>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <i class="fa-solid fa-message fa-4x green-color" ></i>
+      <span class="d-block green-color h2 fw-bold mb-0">424</span>
+      <span class="main-text-color text-uppercase fst-italic">questions answers</span>
+    </div>
+  </div>
+</div>
+</section>
+    <!-- end over all -->
+    <!-- start hint -->
+  <section class="hint main-color text-white py-5 text-center ">
+    <div class="container">
+      <div class="row align-items-center gy-4 gy-md-0">
+        <div class="col-md-6  text-md-start">
+          <p class="mb-0 fs-3 fw-light">You Think We Are Cool?Let us Work together</p>
+        </div>
+        <div class="col-md-6 text-md-end ">
+          <a href="#" class="text-uppercase text-decoration-none text-white px-4 py-2 border mb-5 "> view more</a>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+    <!-- end hint -->
+    <!-- start contacts -->
+    <section class="contacts py-5" id="Contact">
+      <div class="container">
+        <div class="row text-center text-lg-start gy-4 gy-lg-0 ">
+          <div class="col-lg-5">
+          <h2 class="mb-5">  <span class="fw-bold green-color">Elite</span><span class="main-text-color fw-light">Corp</span></h2>
+     <p class="mb-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto animi earum hic culpa quos Est iusto animi earum hic culpa quos quidem ex rerum cumque non cupiditate praesentium, sit ab dignissimos omnis quae blanditiis deserunt doloribus! Facilis assumenda incidunt nulla nemo dolorem eligendi asperiores quae quas! Recusandae tempore obcaecati rem, dolorum ex perspiciatis eius dicta ducimus.</p>
+      <a class="green-color text-decoration-none" href="#"><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>Reed more</a>
+
+          </div>
+          <div class="col-lg-4">
+            <h3 class="mb-5">Helpful links</h3>
+            <div class="row green-color">
+              <div class="col-md-6">
+                <ul class="fa-ul m-0 lh-lg" >
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>List icons can</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>be used to</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1 "></i></span>replace bullets</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>in lists</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>List icons can</li>
+                </ul>
+              </div>
+                <div class="col-md-6">
+                <ul class="fa-ul m-0 lh-lg">
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>List icons can</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>be used to</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1 "></i></span>replace bullets</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>in lists</li>
+                  <li><span class=""><i class="fa-solid fa-arrow-right me-1"></i></span>List icons can</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3">
+            <h3 class="mb-5 ">Contact Us</h3>
+            <p class="mb-5 text-muted">54958 Levo Road Near Red Fort,U.S</p>
+            <p class="mb-5 text-muted">Phone: &nbsp;012-12345678</p>
+            <p class=" text-muted">Email: &nbsp; <span class="green-color">@info@elitecorp.com</span></p>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- end contacts -->
+    <!-- start footer -->
+<section class="footer border-top py-4 text-center text-md-start">
+<div class="container">
+  <div class="row gy-3 gy-md-0">
+    <div class="col-md-6">
+      <p class="text-uppercase text-muted mb-0">copyright 2017 elitecorp all rights reserved </p>
+    </div>
+ 
+  <div class="col-md-6 ">
+    <ul class="icons gap-5 list-unstyled d-flex justify-content-md-end  justify-content-center mb-0">
+      <li><a href="#"><i class="fa-brands fa-facebook-f text-muted fa-lg"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter text-muted fa-lg"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin text-muted fa-lg"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram text-muted fa-lg"></i></a></li>
+      <li ><a href="#"><i class="fa-brands fa-pinterest-p text-muted fa-lg"></i></a></li>
+
+
+
+
+
+    </ul>
+  </div>
+</div>
+</section>
+    <!-- end footer -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
