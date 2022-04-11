@@ -1,5 +1,7 @@
-$(".navbar #mainnav ul li a").click(function(){
+$(".nav-item .nav-link").click(function(){
     $('body,html').animate({scrollTop:$("#" + $(this).data('value')).offset().top},1000)
+    $(".nav-item .nav-link").removeClass("active")
+    $(this).addClass(".active")
 })
   
 //quotes
@@ -16,3 +18,9 @@ document.getElementById("quo").innerHTML =`${quotes[rondomQuote].quote}`
 document.getElementById("author").innerHTML = `${quotes[rondomQuote].author}`
 
 }
+$(".nav-item .nav-link").click(function(){
+    $("body,html").animate({scrollTop:$("#" + $(this).data("value")).offset().top + 1}
+        ,1000)
+        $(".nav-item .nav-link").removeClass("active")  
+        $(this).addClass("active")  
+})

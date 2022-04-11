@@ -48,7 +48,6 @@ body{
     color:var(--green-color)
 }
 .navbar .nav-link.active,
-.navbar .nav-link:focus,
 .navbar .nav-link:hover{
     color: var(--main-color);
 }
